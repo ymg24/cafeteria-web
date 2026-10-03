@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+
+<rect width="500" height="350" rx="30" fill="#dcebd8"/>
+
+<!-- mapa -->
+<rect x="70" y="55" width="360" height="240" rx="20"
+fill="#fffaf3"/>
+
+<!-- calles -->
+<path d="M90 120 L410 120"
+stroke="#d7b99b"
+stroke-width="18"/>
+
+<path d="M90 205 L410 205"
+stroke="#d7b99b"
+stroke-width="18"/>
+
+<path d="M180 70 L180 290"
+stroke="#d7b99b"
+stroke-width="18"/>
+
+<path d="M330 70 L330 290"
+stroke="#d7b99b"
+stroke-width="18"/>
+
+<!-- ubicación -->
+<path d="M250 245
+C210 200 190 175 190 140
+C190 90 225 70 250 70
+C275 70 310 90 310 140
+C310 175 290 200 250 245Z"
+fill="#b86632"/>
+
+<circle cx="250" cy="135" r="25" fill="#fffaf3"/>
+
+<circle cx="250" cy="135" r="10" fill="#b86632"/>
+
+<text x="250" y="330"
+text-anchor="middle"
+font-family="Arial"
+font-size="28"
+font-weight="bold"
+fill="#6b4226">
+UBICACIÓN
+</text>
+
+</svg>

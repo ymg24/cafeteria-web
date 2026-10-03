@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+
+<rect width="600" height="400" rx="30" fill="#ead4bd"/>
+
+<circle cx="300" cy="190" r="125" fill="#fffaf3"/>
+
+<!-- plato -->
+<ellipse cx="300" cy="300" rx="145" ry="28" fill="#c7a586"/>
+
+<!-- taza -->
+<path d="M205 160 Q300 130 395 160 L380 275 Q300 310 220 275 Z"
+fill="#ffffff"/>
+
+<!-- café -->
+<ellipse cx="300" cy="160" rx="95" ry="32" fill="#5a3523"/>
+<ellipse cx="300" cy="155" rx="70" ry="17" fill="#3e2723"/>
+
+<!-- asa -->
+<path d="M390 180 Q470 160 470 220 Q470 270 390 255"
+fill="none"
+stroke="#ffffff"
+stroke-width="22"/>
+
+<!-- vapor -->
+<path d="M260 120 Q240 80 260 50"
+stroke="#b98258"
+stroke-width="9"
+fill="none"/>
+
+<path d="M300 120 Q280 75 300 45"
+stroke="#b98258"
+stroke-width="9"
+fill="none"/>
+
+<path d="M340 120 Q320 80 340 50"
+stroke="#b98258"
+stroke-width="9"
+fill="none"/>
+
+<text x="300" y="355"
+text-anchor="middle"
+font-family="Arial"
+font-size="34"
+font-weight="bold"
+fill="#6b4226">
+CAFÉS
+</text>
+
+</svg>

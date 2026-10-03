@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+
+<rect width="800" height="500" fill="#dcebd8"/>
+
+<!-- edificio -->
+<rect x="140" y="120" width="520" height="270"
+rx="20"
+fill="#fffaf3"/>
+
+<!-- techo -->
+<path d="M110 140 L400 55 L690 140 Z"
+fill="#6b4226"/>
+
+<!-- letrero -->
+<rect x="245" y="135" width="310" height="70"
+rx="15"
+fill="#f3c48b"/>
+
+<text x="400" y="182"
+text-anchor="middle"
+font-family="Arial"
+font-size="35"
+font-weight="bold"
+fill="#6b4226">
+CAFÉ SNOOPY
+</text>
+
+<!-- ventana -->
+<rect x="190" y="230" width="170" height="120"
+rx="10"
+fill="#b8d7df"/>
+
+<line x1="275" y1="230" x2="275" y2="350"
+stroke="#ffffff"
+stroke-width="8"/>
+
+<line x1="190" y1="290" x2="360" y2="290"
+stroke="#ffffff"
+stroke-width="8"/>
+
+<!-- puerta -->
+<rect x="420" y="220" width="120" height="170"
+rx="10"
+fill="#8b5e3c"/>
+
+<circle cx="515" cy="305" r="7" fill="#f3c48b"/>
+
+<!-- mesas -->
+<circle cx="600" cy="315" r="25" fill="#6b4226"/>
+<rect x="595" y="340" width="10" height="45" fill="#6b4226"/>
+
+<circle cx="180" cy="320" r="22" fill="#6b4226"/>
+<rect x="176" y="342" width="9" height="42" fill="#6b4226"/>
+
+<!-- planta -->
+<rect x="585" y="350" width="30" height="40" fill="#b56e4b"/>
+
+<circle cx="600" cy="330" r="30" fill="#759b65"/>
+
+<circle cx="580" cy="345" r="22" fill="#759b65"/>
+
+<circle cx="620" cy="345" r="22" fill="#759b65"/>
+
+<text x="400" y="450"
+text-anchor="middle"
+font-family="Arial"
+font-size="30"
+font-weight="bold"
+fill="#6b4226">
+Un lugar para disfrutar
+</text>
+
+</svg>

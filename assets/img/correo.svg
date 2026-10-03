@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+
+<rect width="500" height="350" rx="30" fill="#ead4bd"/>
+
+<!-- sobre -->
+<rect x="100" y="95"
+width="300"
+height="180"
+rx="18"
+fill="#fffaf3"/>
+
+<!-- diagonal izquierda -->
+<path d="M105 105 L250 220 L395 105"
+fill="none"
+stroke="#6b4226"
+stroke-width="13"/>
+
+<!-- diagonal inferior -->
+<path d="M105 265 L215 175"
+stroke="#c89168"
+stroke-width="10"/>
+
+<path d="M395 265 L285 175"
+stroke="#c89168"
+stroke-width="10"/>
+
+<text x="250" y="320"
+text-anchor="middle"
+font-family="Arial"
+font-size="28"
+font-weight="bold"
+fill="#6b4226">
+CORREO
+</text>
+
+</svg>

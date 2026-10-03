@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="30" fill="#f5dfc7"/>
+<circle cx="400" cy="240" r="165" fill="#fffaf3"/>
+<path d="M270 170 L530 170 L500 335 Q400 375 300 335 Z" fill="#4b2920"/>
+<path d="M270 170 Q400 125 530 170 Q400 215 270 170" fill="#60372a"/>
+<circle cx="330" cy="225" r="13" fill="#d9a15b"/>
+<circle cx="400" cy="255" r="13" fill="#d9a15b"/>
+<circle cx="465" cy="220" r="13" fill="#d9a15b"/>
+<circle cx="365" cy="305" r="12" fill="#d9a15b"/>
+<circle cx="440" cy="300" r="12" fill="#d9a15b"/>
+<path d="M270 360 Q400 400 530 360" fill="none" stroke="#8b5e3c" stroke-width="15"/>
+<text x="400" y="440" text-anchor="middle" font-family="Arial" font-size="42" font-weight="bold" fill="#6b4226">Brownie</text>
+</svg>

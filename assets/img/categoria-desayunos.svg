@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+
+<rect width="600" height="400" rx="30" fill="#f4dfc5"/>
+
+<circle cx="300" cy="195" r="135" fill="#fffaf3"/>
+
+<!-- plato -->
+<ellipse cx="300" cy="305" rx="190" ry="30" fill="#d0ae8d"/>
+
+<!-- pan -->
+<path d="M180 230 Q190 160 260 165 Q300 130 345 165 Q415 155 425 230
+Q425 270 390 285
+L210 285
+Q175 270 180 230Z"
+fill="#d59b59"/>
+
+<!-- pan interior -->
+<path d="M205 225 Q220 185 260 190"
+stroke="#f3c98d"
+stroke-width="18"
+fill="none"
+stroke-linecap="round"/>
+
+<!-- huevo -->
+<path d="M300 185
+C340 155 380 180 365 215
+C355 245 315 250 295 225
+C275 250 235 235 240 205
+C245 175 275 170 300 185Z"
+fill="#ffffff"/>
+
+<circle cx="305" cy="210" r="17" fill="#e9a53f"/>
+
+<!-- croissant -->
+<path d="M370 245 Q405 205 440 245 Q420 285 385 270Z"
+fill="#b96e35"/>
+
+<text x="300" y="355"
+text-anchor="middle"
+font-family="Arial"
+font-size="34"
+font-weight="bold"
+fill="#6b4226">
+DESAYUNOS
+</text>
+
+</svg>

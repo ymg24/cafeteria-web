@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+
+<rect width="500" height="350" rx="30" fill="#f4dfc5"/>
+
+<!-- círculo -->
+<circle cx="250" cy="155" r="100" fill="#fffaf3"/>
+
+<!-- teléfono -->
+<path d="M190 95
+C175 110 180 145 205 185
+C230 225 265 245 295 245
+C315 245 330 230 340 215
+L305 185
+L280 205
+C265 195 250 180 240 165
+L260 140
+L230 105
+C220 92 205 88 190 95Z"
+fill="#6b4226"/>
+
+<text x="250" y="310"
+text-anchor="middle"
+font-family="Arial"
+font-size="28"
+font-weight="bold"
+fill="#6b4226">
+TELÉFONO
+</text>
+
+</svg>

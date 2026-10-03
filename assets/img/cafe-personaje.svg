@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+
+<rect width="800" height="500" fill="#f8e5cf"/>
+
+<circle cx="400" cy="230" r="150" fill="#fffaf3"/>
+
+<!-- cabeza -->
+<ellipse cx="400" cy="245" rx="110" ry="95" fill="#f0d0a5"/>
+
+<!-- orejas -->
+<ellipse cx="305" cy="185" rx="45" ry="75" fill="#6b4226"/>
+<ellipse cx="495" cy="185" rx="45" ry="75" fill="#6b4226"/>
+
+<!-- ojos -->
+<circle cx="365" cy="235" r="10" fill="#3e2723"/>
+<circle cx="435" cy="235" r="10" fill="#3e2723"/>
+
+<!-- nariz -->
+<circle cx="400" cy="260" r="10" fill="#3e2723"/>
+
+<!-- sonrisa -->
+<path d="M400 270 Q365 310 335 280"
+stroke="#3e2723"
+stroke-width="8"
+fill="none"/>
+
+<path d="M400 270 Q435 310 465 280"
+stroke="#3e2723"
+stroke-width="8"
+fill="none"/>
+
+<!-- taza -->
+<path d="M350 335 Q400 315 450 335 L440 380 Q400 395 360 380 Z"
+fill="#8b5e3c"/>
+
+<ellipse cx="400" cy="335" rx="50" ry="15" fill="#3e2723"/>
+
+<!-- vapor -->
+<path d="M380 310 Q360 275 380 250"
+stroke="#b98258"
+stroke-width="7"
+fill="none"/>
+
+<path d="M420 310 Q440 275 420 250"
+stroke="#b98258"
+stroke-width="7"
+fill="none"/>
+
+<text x="400" y="455"
+text-anchor="middle"
+font-family="Arial"
+font-size="38"
+font-weight="bold"
+fill="#6b4226">
+Café Snoopy
+</text>
+
+</svg>

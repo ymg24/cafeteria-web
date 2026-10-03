@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+
+<rect width="800" height="500" fill="#ead4bd"/>
+
+<circle cx="400" cy="245" r="165" fill="#fffaf3"/>
+
+<!-- plato -->
+<ellipse cx="400" cy="355" rx="180" ry="35" fill="#d7b99b"/>
+
+<!-- taza -->
+<path d="M285 205 Q400 170 515 205 L495 325 Q400 365 305 325 Z"
+fill="#ffffff"/>
+
+<!-- café -->
+<ellipse cx="400" cy="205" rx="115" ry="38" fill="#5a3523"/>
+
+<ellipse cx="400" cy="200" rx="85" ry="22" fill="#3e2723"/>
+
+<!-- asa -->
+<path d="M510 225 Q610 205 610 275 Q610 335 505 310"
+fill="none"
+stroke="#ffffff"
+stroke-width="25"/>
+
+<!-- vapor -->
+<path d="M350 155 Q325 110 350 75"
+stroke="#b98258"
+stroke-width="12"
+fill="none"
+stroke-linecap="round"/>
+
+<path d="M410 155 Q385 105 410 65"
+stroke="#b98258"
+stroke-width="12"
+fill="none"
+stroke-linecap="round"/>
+
+<path d="M470 155 Q445 110 470 75"
+stroke="#b98258"
+stroke-width="12"
+fill="none"
+stroke-linecap="round"/>
+
+<text x="400" y="430"
+text-anchor="middle"
+font-family="Arial"
+font-size="40"
+font-weight="bold"
+fill="#6b4226">
+Café Americano
+</text>
+
+</svg>

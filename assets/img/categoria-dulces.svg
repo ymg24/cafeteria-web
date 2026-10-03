@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+
+<rect width="600" height="400" rx="30" fill="#f1d8df"/>
+
+<circle cx="300" cy="190" r="135" fill="#fffaf3"/>
+
+<!-- plato -->
+<ellipse cx="300" cy="310" rx="175" ry="28" fill="#d0aeb0"/>
+
+<!-- torta -->
+<path d="M200 190 L400 190 L385 285 Q300 315 215 285Z"
+fill="#8b5e3c"/>
+
+<!-- crema -->
+<path d="M200 190 Q230 160 260 190
+Q290 155 320 190
+Q350 155 380 190
+Q400 175 400 190"
+fill="#fff1e2"/>
+
+<!-- chocolate -->
+<circle cx="245" cy="225" r="9" fill="#4b2920"/>
+<circle cx="300" cy="250" r="9" fill="#4b2920"/>
+<circle cx="350" cy="220" r="9" fill="#4b2920"/>
+
+<!-- fresa -->
+<circle cx="300" cy="160" r="22" fill="#d75b55"/>
+<path d="M300 140 L285 120 M300 140 L315 120"
+stroke="#759b65"
+stroke-width="7"/>
+
+<text x="300" y="355"
+text-anchor="middle"
+font-family="Arial"
+font-size="34"
+font-weight="bold"
+fill="#6b4226">
+DULCES
+</text>
+
+</svg>

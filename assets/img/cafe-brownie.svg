@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+
+<rect width="800" height="500" fill="#f0d9c0"/>
+
+<circle cx="400" cy="245" r="165" fill="#fffaf3"/>
+
+<!-- plato -->
+<ellipse cx="400" cy="360" rx="190" ry="32" fill="#d1b197"/>
+
+<!-- brownie -->
+<path d="M270 180 L530 180 L500 330 Q400 370 300 330 Z"
+fill="#4b2920"/>
+
+<!-- parte superior -->
+<path d="M270 180 Q400 135 530 180 Q400 225 270 180"
+fill="#60372a"/>
+
+<!-- chocolate -->
+<circle cx="330" cy="220" r="12" fill="#d59b59"/>
+<circle cx="400" cy="250" r="12" fill="#d59b59"/>
+<circle cx="470" cy="215" r="12" fill="#d59b59"/>
+<circle cx="360" cy="300" r="12" fill="#d59b59"/>
+<circle cx="440" cy="295" r="12" fill="#d59b59"/>
+
+<!-- corazón decorativo -->
+<path d="M400 150
+C380 125 340 145 400 185
+C460 145 420 125 400 150"
+fill="#c97942"/>
+
+<text x="400" y="435"
+text-anchor="middle"
+font-family="Arial"
+font-size="42"
+font-weight="bold"
+fill="#6b4226">
+Brownie
+</text>
+
+</svg>

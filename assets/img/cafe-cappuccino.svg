@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+
+<rect width="800" height="500" fill="#f3dfc9"/>
+
+<circle cx="400" cy="245" r="165" fill="#fffaf3"/>
+
+<!-- plato -->
+<ellipse cx="400" cy="360" rx="180" ry="30" fill="#d2b49a"/>
+
+<!-- taza -->
+<path d="M285 210 Q400 170 515 210 L495 325 Q400 360 305 325 Z"
+fill="#ffffff"/>
+
+<!-- cappuccino -->
+<ellipse cx="400" cy="210" rx="115" ry="40" fill="#c89168"/>
+
+<!-- espuma -->
+<path d="M330 210 Q365 175 400 210 Q435 175 470 210"
+fill="none"
+stroke="#fff4e5"
+stroke-width="22"
+stroke-linecap="round"/>
+
+<!-- asa -->
+<path d="M510 230 Q600 210 600 275 Q600 325 510 310"
+fill="none"
+stroke="#ffffff"
+stroke-width="25"/>
+
+<!-- canela -->
+<circle cx="350" cy="230" r="7" fill="#8b5e3c"/>
+<circle cx="400" cy="220" r="7" fill="#8b5e3c"/>
+<circle cx="450" cy="230" r="7" fill="#8b5e3c"/>
+
+<!-- vapor -->
+<path d="M370 155 Q345 110 370 75"
+stroke="#b98258"
+stroke-width="10"
+fill="none"/>
+
+<path d="M430 155 Q455 110 430 75"
+stroke="#b98258"
+stroke-width="10"
+fill="none"/>
+
+<text x="400" y="435"
+text-anchor="middle"
+font-family="Arial"
+font-size="40"
+font-weight="bold"
+fill="#6b4226">
+Cappuccino
+</text>
+
+</svg>

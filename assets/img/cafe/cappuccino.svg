@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="30" fill="#ead4bd"/>
+<circle cx="400" cy="250" r="170" fill="#fffaf3"/>
+<ellipse cx="400" cy="280" rx="130" ry="45" fill="#6b4226"/>
+<path d="M285 210 Q400 170 515 210 L495 315 Q400 350 305 315 Z" fill="#fff"/>
+<ellipse cx="400" cy="210" rx="115" ry="38" fill="#c89b75"/>
+<path d="M350 210 Q400 170 450 210 Q400 250 350 210" fill="#fff2dc"/>
+<path d="M515 230 Q590 215 590 275 Q590 320 515 310" fill="none" stroke="#fff" stroke-width="22"/>
+<circle cx="330" cy="135" r="10" fill="#b98258"/>
+<circle cx="400" cy="120" r="10" fill="#b98258"/>
+<circle cx="470" cy="135" r="10" fill="#b98258"/>
+<text x="400" y="430" text-anchor="middle" font-family="Arial" font-size="40" font-weight="bold" fill="#6b4226">Cappuccino</text>
+</svg>

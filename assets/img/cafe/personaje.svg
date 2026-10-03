@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="30" fill="#dcebd8"/>
+
+<circle cx="400" cy="235" r="130" fill="#fffaf3"/>
+
+<ellipse cx="400" cy="245" rx="100" ry="90" fill="#f2d2a2"/>
+
+<ellipse cx="355" cy="225" rx="12" ry="18" fill="#3e2723"/>
+<ellipse cx="445" cy="225" rx="12" ry="18" fill="#3e2723"/>
+
+<circle cx="400" cy="255" r="9" fill="#3e2723"/>
+
+<path d="M400 265 Q370 295 340 270" fill="none" stroke="#3e2723" stroke-width="8" stroke-linecap="round"/>
+<path d="M400 265 Q430 295 460 270" fill="none" stroke="#3e2723" stroke-width="8" stroke-linecap="round"/>
+
+<path d="M300 185 Q260 140 290 105" fill="none" stroke="#8b5e3c" stroke-width="25" stroke-linecap="round"/>
+<path d="M500 185 Q540 140 510 105" fill="none" stroke="#8b5e3c" stroke-width="25" stroke-linecap="round"/>
+
+<path d="M340 330 Q400 360 460 330" fill="none" stroke="#6b4226" stroke-width="14" stroke-linecap="round"/>
+
+<text x="400" y="430" text-anchor="middle" font-family="Arial" font-size="38" font-weight="bold" fill="#6b4226">
+Bienvenido a Café Snoopy
+</text>
+</svg>

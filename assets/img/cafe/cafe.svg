@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" rx="30" fill="#f8e8d4"/>
+<circle cx="400" cy="230" r="150" fill="#fffaf3"/>
+<path d="M280 210 Q400 170 520 210 L500 330 Q400 370 300 330 Z" fill="#8b5e3c"/>
+<ellipse cx="400" cy="210" rx="120" ry="35" fill="#6b4226"/>
+<ellipse cx="400" cy="205" rx="90" ry="22" fill="#3e2723"/>
+<path d="M520 235 Q610 220 610 285 Q610 340 515 320" fill="none" stroke="#6b4226" stroke-width="25"/>
+<path d="M350 135 Q330 90 355 65" fill="none" stroke="#b98258" stroke-width="12" stroke-linecap="round"/>
+<path d="M420 130 Q400 80 425 50" fill="none" stroke="#b98258" stroke-width="12" stroke-linecap="round"/>
+<text x="400" y="430" text-anchor="middle" font-family="Arial" font-size="42" font-weight="bold" fill="#6b4226">Café Snoopy</text>
+</svg>

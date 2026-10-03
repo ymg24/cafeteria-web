@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Café Snoopy | Cafetería</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <style>
+
+        /* =========================
+           ESTILOS GENERALES
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fffaf3;
+            color: #3e2723;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           BARRA SUPERIOR
+        ========================= */
+
+        .top-bar {
+            background-color: #3e2723;
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .top-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: white;
+            margin-right: 18px;
+        }
+
+
+        /* =========================
+           MENU PRINCIPAL
+        ========================= */
+
+        .main-menu {
+            background-color: white;
+
+            box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+        }
+
+        .menu-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 18px 0;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #6b4226;
+        }
+
+        .logo span {
+            color: #d69b62;
+        }
+
+        .menu-links {
+            display: flex;
+            gap: 30px;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+        }
+
+        .menu-links a {
+            color: #4b3021;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .menu-links a:hover {
+            color: #c47a43;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #f8e5cf,
+                #fff5e8
+            );
+
+            padding: 70px 0;
+        }
+
+        .hero-content {
+            width: 90%;
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            align-items: center;
+
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+
+            color: #6b4226;
+
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            color: #a9683e;
+
+            font-size: 27px;
+
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #65483a;
+        }
+
+        .btn-cafe {
+            display: inline-block;
+
+            background-color: #6b4226;
+
+            color: white;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            margin-top: 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn-cafe:hover {
+            background-color: #9a623d;
+
+            color: white;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+
+            max-width: 520px;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 12px 30px
+                rgba(80,50,30,0.18);
+        }
+
+
+        /* =========================
+           SECCIONES
+        ========================= */
+
+        .section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+
+            color: #6b4226;
+
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #795548;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           CATEGORIAS
+        ========================= */
+
+        .categories {
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .category {
+            background-color: white;
+
+            border-radius: 20px;
+
+            padding: 30px;
+
+            text-align: center;
+
+            box-shadow:
+                0 5px 20px
+                rgba(70,40,20,0.08);
+
+            transition: 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-7px);
+        }
+
+        .category-image {
+            width: 180px;
+
+            height: 120px;
+
+            object-fit: contain;
+
+            margin-bottom: 15px;
+        }
+
+        .category h3 {
+            color: #6b4226;
+
+            font-size: 23px;
+        }
+
+        .category p {
+            color: #795548;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           MENU DE PRODUCTOS
+        ========================= */
+
+        .menu-section {
+            background-color: #f7eee4;
+        }
+
+        .products {
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 30px;
+        }
+
+        .product {
+            background-color: white;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 5px 20px
+                rgba(70,40,20,0.10);
+
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-8px);
+        }
+
+        .product img {
+            width: 100%;
+
+            height: 250px;
+
+            display: block;
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-info h3 {
+            color: #6b4226;
+
+            font-size: 24px;
+
+            margin-bottom: 12px;
+        }
+
+        .product-info p {
+            color: #795548;
+
+            line-height: 1.6;
+
+            min-height: 75px;
+        }
+
+        .price {
+            display: block;
+
+            color: #b86632;
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           SOBRE NOSOTROS
+        ========================= */
+
+        .about {
+            background-color: #f2ddc5;
+        }
+
+        .about-content {
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            align-items: center;
+
+            gap: 50px;
+        }
+
+        .about h2 {
+            color: #6b4226;
+
+            font-size: 38px;
+
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #65483a;
+
+            line-height: 1.8;
+
+            font-size: 17px;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+
+            max-width: 500px;
+
+            display: block;
+
+            margin: auto;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 25px
+                rgba(70,40,20,0.15);
+        }
+
+
+        /* =========================
+           CONTACTO
+        ========================= */
+
+        .contact {
+            width: 90%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .contact-box {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .contact-item {
+            background-color: white;
+
+            padding: 25px 20px 30px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 4px 15px
+                rgba(60,40,20,0.08);
+
+            transition: 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-image {
+            width: 180px;
+
+            height: 125px;
+
+            object-fit: contain;
+
+            margin-bottom: 10px;
+        }
+
+        .contact-item h3 {
+            color: #6b4226;
+
+            font-size: 22px;
+        }
+
+        .contact-item p {
+            color: #795548;
+
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background-color: #3e2723;
+
+            color: white;
+
+            padding: 45px 0 20px;
+        }
+
+        .footer-content {
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 50px;
+        }
+
+        footer h2 {
+            color: #f3c48b;
+        }
+
+        footer p {
+            color: #eadbd0;
+
+            line-height: 1.7;
+        }
+
+        .footer-links {
+            list-style: none;
+
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #eadbd0;
+        }
+
+        .footer-links a:hover {
+            color: #f3c48b;
+        }
+
+        .copyright {
+            text-align: center;
+
+            margin-top: 35px;
+
+            padding-top: 20px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.2);
+
+            color: #d8c8bd;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .categories,
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-content {
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         BARRA SUPERIOR
+    ================================== -->
+
+    <div class="top-bar">
+
+        <div class="top-content">
+
+            <div>
+
+                <a href="mailto:cafe@cafesnoopy.com">
+                    ✉ cafe@cafesnoopy.com
+                </a>
+
+                <a href="tel:+51987654321">
+                    ☎ 987 654 321
+                </a>
+
+            </div>
+
+            <div>
+
+                <span>Facebook</span>
+
+                &nbsp;&nbsp;
+
+                <span>Instagram</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         MENU PRINCIPAL
+    ================================== -->
+
+    <nav class="main-menu">
+
+        <div class="menu-content">
+
+
+            <a
+                href="#inicio"
+                class="logo">
+
+                Café
+                <span>Snoopy</span>
+
+            </a>
+
+
+            <ul class="menu-links">
+
+                <li>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#menu">
+                        Menú
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nosotros">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+
+    <!-- =================================
+         INICIO
+    ================================== -->
+
+    <section
+        class="hero"
+        id="inicio">
+
+        <div class="hero-content">
+
+
+            <div>
+
+                <h1>
+                    Café Snoopy
+                </h1>
+
+
+                <h2>
+                    Un pequeño lugar para disfrutar
+                </h2>
+
+
+                <p>
+
+                    Disfruta de un buen café,
+                    deliciosos postres y momentos
+                    especiales en un ambiente cálido
+                    y acogedor.
+
+                </p>
+
+
+                <a
+                    href="#menu"
+                    class="btn-cafe">
+
+                    Ver nuestro menú
+
+                </a>
+
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="assets/img/cafe-personaje.svg"
+                    alt="Personaje de Café Snoopy">
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         CATEGORIAS
+    ================================== -->
+
+    <section class="section">
+
+
+        <div class="section-title">
+
+            <h2>
+                Nuestro menú
+            </h2>
+
+            <p>
+                Opciones sencillas para acompañar
+                tus momentos.
+            </p>
+
+        </div>
+
+
+        <div class="categories">
+
+
+            <!-- CAFÉS -->
+
+            <div class="category">
+
+                <img
+                    src="assets/img/categoria-cafes.svg"
+                    alt="Cafés"
+                    class="category-image">
+
+
+                <h3>
+                    Cafés
+                </h3>
+
+
+                <p>
+
+                    Café americano,
+                    cappuccino y latte
+                    preparados al momento.
+
+                </p>
+
+            </div>
+
+
+            <!-- DESAYUNOS -->
+
+            <div class="category">
+
+                <img
+                    src="assets/img/categoria-desayunos.svg"
+                    alt="Desayunos"
+                    class="category-image">
+
+
+                <h3>
+                    Desayunos
+                </h3>
+
+
+                <p>
+
+                    Croissants,
+                    tostadas y sándwiches
+                    para comenzar el día.
+
+                </p>
+
+            </div>
+
+
+            <!-- DULCES -->
+
+            <div class="category">
+
+                <img
+                    src="assets/img/categoria-dulces.svg"
+                    alt="Dulces"
+                    class="category-image">
+
+
+                <h3>
+                    Dulces
+                </h3>
+
+
+                <p>
+
+                    Brownies,
+                    galletas y deliciosos
+                    postres para compartir.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         PRODUCTOS
+    ================================== -->
+
+    <section
+        class="section menu-section"
+        id="menu">
+
+
+        <div class="section-title">
+
+            <h2>
+                Favoritos de la casa
+            </h2>
+
+            <p>
+                Conoce algunos de nuestros productos.
+            </p>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <div class="product">
+
+
+                <img
+                    src="assets/img/cafe-cafe.svg"
+                    alt="Café americano">
+
+
+                <div class="product-info">
+
+
+                    <h3>
+                        Café americano
+                    </h3>
+
+
+                    <p>
+
+                        Café recién preparado,
+                        aromático y perfecto
+                        para comenzar el día.
+
+                    </p>
+
+
+                    <span class="price">
+                        S/ 5.00
+                    </span>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 2 -->
+
+            <div class="product">
+
+
+                <img
+                    src="assets/img/cafe-cappuccino.svg"
+                    alt="Cappuccino">
+
+
+                <div class="product-info">
+
+
+                    <h3>
+                        Cappuccino
+                    </h3>
+
+
+                    <p>
+
+                        Espresso acompañado
+                        de leche cremosa
+                        y una deliciosa espuma.
+
+                    </p>
+
+
+                    <span class="price">
+                        S/ 7.00
+                    </span>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+
+            <div class="product">
+
+
+                <img
+                    src="assets/img/cafe-brownie.svg"
+                    alt="Brownie de chocolate">
+
+
+                <div class="product-info">
+
+
+                    <h3>
+                        Brownie
+                    </h3>
+
+
+                    <p>
+
+                        Brownie de chocolate
+                        suave, perfecto para
+                        acompañar tu café.
+
+                    </p>
+
+
+                    <span class="price">
+                        S/ 6.00
+                    </span>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         NOSOTROS
+    ================================== -->
+
+    <section
+        class="section about"
+        id="nosotros">
+
+
+        <div class="about-content">
+
+
+            <div>
+
+
+                <h2>
+                    Sobre Café Snoopy
+                </h2>
+
+
+                <p>
+
+                    Café Snoopy es una cafetería
+                    pensada para disfrutar de un
+                    momento tranquilo, acompañado
+                    de una buena taza de café
+                    y algo dulce.
+
+                </p>
+
+
+                <p>
+
+                    Nuestro espacio combina café,
+                    postres y un ambiente acogedor,
+                    inspirado en la alegría de las
+                    pequeñas cosas.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="about-image">
+
+
+                <img
+                    src="assets/img/cafe-cafeteria.svg"
+                    alt="Ilustración de la cafetería">
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         CONTACTO
+    ================================== -->
+
+    <section
+        class="section"
+        id="contacto">
+
+
+        <div class="contact">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Visítanos
+                </h2>
+
+                <p>
+
+                    Estamos listos para compartir
+                    un buen café contigo.
+
+                </p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+
+                <!-- UBICACIÓN -->
+
+                <div class="contact-item">
+
+
+                    <img
+                        src="assets/img/ubicacion.svg"
+                        alt="Ubicación"
+                        class="contact-image">
+
+
+                    <h3>
+                        Ubicación
+                    </h3>
+
+
+                    <p>
+                        Cusco, Perú
+                    </p>
+
+
+                </div>
+
+
+                <!-- TELÉFONO -->
+
+                <div class="contact-item">
+
+
+                    <img
+                        src="assets/img/telefono.svg"
+                        alt="Teléfono"
+                        class="contact-image">
+
+
+                    <h3>
+                        Teléfono
+                    </h3>
+
+
+                    <p>
+                        987 654 321
+                    </p>
+
+
+                </div>
+
+
+                <!-- CORREO -->
+
+                <div class="contact-item">
+
+
+                    <img
+                        src="assets/img/correo.svg"
+                        alt="Correo electrónico"
+                        class="contact-image">
+
+
+                    <h3>
+                        Correo
+                    </h3>
+
+
+                    <p>
+                        cafe@cafesnoopy.com
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+
+        <div class="footer-content">
+
+
+            <div>
+
+
+                <h2>
+                    Café Snoopy
+                </h2>
+
+
+                <p>
+
+                    Café, dulces y buenos momentos.
+
+                </p>
+
+
+                <p>
+
+                    Página web desarrollada
+                    como proyecto académico.
+
+                </p>
+
+
+            </div>
+
+
+            <div>
+
+
+                <h2>
+                    Enlaces
+                </h2>
+
+
+                <ul class="footer-links">
+
+
+                    <li>
+
+                        <a href="#inicio">
+                            Inicio
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#menu">
+                            Menú
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#nosotros">
+                            Nosotros
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#contacto">
+                            Contacto
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Café Snoopy |
+            Página web académica
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
